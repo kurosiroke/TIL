@@ -66,3 +66,5 @@
             2章【アプリケーションを作成しよう】にあるように必要なプラグインを追加していなかった。
             _app $ yarn add @babel/plugin-proposal-private-methods @babel/plugin-proposal-private-property-in-object
             これを入力したことで、正常にviwesが表示された。
+      最もな原因は、見落とし。
+      気を付けてみていくようにする。
