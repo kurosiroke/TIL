@@ -57,3 +57,12 @@
             money  = number * 500 ←ランダム表示したものに５００を掛ける
             puts "スライムが#{number}匹あらわれた"
             puts "スライムを倒したときの獲得金額は#{money}円です"
+11/11 ruby on rails でアプリを作成。
+      viwesでwebpackがないとエラー
+            コントローラー作って、アクション追加して。ルーティングを記述、viwesを作成。
+            プレビューでエラー。
+            webpackがないといわれる.
+      原因
+            2章【アプリケーションを作成しよう】にあるように必要なプラグインを追加していなかった。
+            _app $ yarn add @babel/plugin-proposal-private-methods @babel/plugin-proposal-private-property-in-object
+            これを入力したことで、正常にviwesが表示された。
