@@ -244,3 +244,23 @@
                   for i in range(300):
                       print(greeting)
                         ↳ これで300回Hello paizaが表示される
+
+            標準入力で指定した回数繰り返す処理
+           　 greeting = "Hello paiza"
+           　 count = int(input())
+            
+          　  for i in range(count):
+          　      print(greeting)
+　                   ↳ countに入力回数を代入し、rangeで使う
+
+            標準入力で指定した文字を入力し、指定した回数繰り返す処理
+             count = int(input())    ←　標準入力で指定する数が入る
+            
+          　 for i in range(count):　←　range関数にcountが入っているので、入力した回数文おこなわれる
+                 name = input() 　 　←　input関数でnameに入力したい文字を入力
+          　     print("Hello" + name)　
+            ※回数のcountを3 nameをA B Cといれると、
+              HelloA
+              HelloB
+              HelloC
+                  入力した数の文と、入力した文が表示される。
