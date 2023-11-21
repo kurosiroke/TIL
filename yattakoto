@@ -237,3 +237,10 @@
                   else:
                       print(str(number) + "はマイナス")
 
+            forとrangeを使った範囲指定のループ処理について
+            　forと:を使い、ループ処理を行う。
+            　range関数を使い、繰り返す範囲を指定する。
+                  greeting = "Hello paiza"
+                  for i in range(300):
+                      print(greeting)
+                        ↳ これで300回Hello paizaが表示される
