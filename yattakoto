@@ -266,3 +266,16 @@
                   入力した数の文と、入力した文が表示される。
 
             forとifは組み合わせて使うことでより多くのデータを分類できる。
+            <例題>入力した回数分の、入力した数がゼロ・プラス・マイナスを繰り返し判定する
+                  count = int(input())
+                  print(count)
+
+                  for i in range(count):
+                      number = int(input())
+                      if number == 0:
+                          print(str(number) + "は0")
+                      elif number > 0:
+                          print(str(number) + "はプラス")
+                      else:
+                          print(str(number) + "はマイナス")
+      　 ※ str関数と:を忘れてしまいがちなので、注意する。
