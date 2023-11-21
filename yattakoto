@@ -159,3 +159,46 @@
             name(変数) = "paiza"
              print(name(変数) + "さん、ようこそ")
             　　　　　↳　変数は""で囲まない。
+      input関数について
+            name = input()
+              print("Hello" + name)
+                               ↳  input関数により、文字を入力することが出来るので、入力した文字が表示される。
+      int関数について
+            number = int(input())
+             print(number)
+                    ↳　int関数により、input関数の文字が数値として入力することが出来る。
+      str関数について
+            number = int(input())
+             print("おこづかい"　+ str(number * 10) + "円")
+                                   ↳　str関数により、数値が文字列と一緒に連結できる。
+      if関数
+            文字列が入力と一致しているのかを判定Rubyと同じ
+            違うところは:(コロン)を最後につけるところ。← 忘れやすいから注意する。      
+            <例>　"Hello"であれば"こんにちは"を出力する
+                  greeting = input()
+                  if greeting == "Hello":
+                        print("こんにちは")
+
+            <例> 数が10より上であるかどうか
+                  number = int(input())
+                  if number >= 10:
+                        print(number)
+            else を使った複数選択
+            <例>　入力がpythonであればwelcomを表示し、それ以外であればGoodbyeを表示する。
+                  name = input()
+                  print("Hello " + name)
+                  if name == "python"
+                        print("Welcome")
+                  else:
+                        print("Goodbye")
+
+            elif を使った、ifの設定法
+            　上記の<例>のif文に、入力がPYTHONであれば、"Good mornig"を表示することを追加し、条件のものを出力する。
+                  name = input()
+                  print("Hello " + name)
+                  if name == "python":
+                        print("Welcome")
+                  elif name == "PYTHON":
+                        print("Good mornig")
+                  else:
+                        print("Goodbye")
