@@ -279,3 +279,37 @@
                       else:
                           print(str(number) + "はマイナス")
       　 ※ str関数と:を忘れてしまいがちなので、注意する。
+11/22 python入門編2
+      ・if文の比較演算子について
+            ==(等しい)　>(大きい・含まない)  <(小さい・未満)  >=（より大きい・問いを含む)  <=(より小さい・問いを含む)　
+            !=(左側の値と右側の値が違うか比較するときに使う) ← 比較する
+            import random ←　ランダムモジュール
+            変数 = random.randint(1,10)  ⇒　randint() ←　ランドイント関数
+            print(変数) ← デバックのために作っていたりするときは#を行う。
+            ①演習課題「大吉の確率を上げてみよう」
+            　omikuji の中には、1~100までの数字がランダムで代入。
+            　omikuji の数字が30~100の時は「omikujiの中身は○○なので大吉」と表示、
+            　omikuji の数字が29以下の時は「omikujiの中身は○○なので大凶」と表示する。
+            　例）omikujiの中身は32なので大吉
+                  import random　←　ランダムモジュール
+                  omikuji = random.randint(1, 100) ←　ランドイント関数
+                  
+                  if omikuji >= 30: 　　←←←　　　　30以上の設定を行った。
+                        print("omikujiの中身は" + str(omikuji) + "なので大吉")
+                  else:
+                        print("omikujiの中身は" + str(omikuji) + "なので大凶"
+
+            ②演習課題「西暦年を昭和年に変換してみよう」  
+                  # coding: utf-8
+                  # 西暦を昭和年に変換
+                  import random
+                  seireki = random.randint(1926, 1988)   #西暦年
+                  print("西暦" + str(seireki) + "年は", end = "")
+                  
+                  # 昭和年を計算
+                  showa = seireki - 1925　←　昭和１年を表示したいため、1926とはしない。
+                  # 昭和年を出力
+                  print("昭和" + str(showa) + "年です")
+                  
+                  
+
