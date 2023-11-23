@@ -310,6 +310,20 @@
                   showa = seireki - 1925　←　昭和１年を表示したいため、1926とはしない。
                   # 昭和年を出力
                   print("昭和" + str(showa) + "年です")
-                  
-                  
 
+11/23  python入門１を行う。
+           　 ・pythonでHTMLタグを使う。
+                  print("<h1>Hello</h1>")   ←　これで<h1>タグが使える。
+                  print("<p>ようこそ</p>") 　←　これで<P>タグが使える。
+                  print("<b>ようこそ</b>")　 ←  これで<b>タグが使える。
+      　　　　　この時、print関数が改行を含んでいるため、改行させたくない場合は、,(カンマ)で区切って一つにする。
+                  print("<h1>Hello</h1>","<p>ようこそ</p>","<b>ようこそ</b>")
+               これで改行されない。
+
+             ・ランダムの表示。
+                        import random
+                        number = random.randint(1,6)
+                        print("サイコロの目は" + str(number) + "です。")
+                  random関数をinportして、から出ないと、random.random も ranndom.randint も使えない。
+                  このため、真っ先にimportを行う。
+                  その他の関数であるprint関数やstr関数はすでにpythonにインストールされているため、importしなくても使える。
