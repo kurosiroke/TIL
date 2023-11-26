@@ -347,7 +347,7 @@
                   p nubers
             こうすることで、4つある配列のうち、[0]である一番目の配列の、[1]となっている2番目の配列を2に変更することが出来る。
 11/26 ポートフォリオ　確認
-            タグのモデル
+           ・タグのモデル
             class Tag < ApplicationRecord
               has_many :attempt_and_tags, dependent: :destroy ←　attemptを消したらタグも同時に消えるように指定。
               has_many :attempts, through: :attempt_and_tags
@@ -355,5 +355,20 @@
               validates :tag_type, presence: true  #nilでは投稿させない
             end
 
-            models の　attempt_and_tag.rbは、attempt の一覧表示の時に指定している。
-            同じくmodelsのTag.rbは、タグを作るときに使っている。
+      　　　・models の　attempt_and_tag.rbは、attempt の一覧表示の時に指定している。
+           　 同じくmodelsのTag.rbは、タグを作るときに使っている。
+
+      　　　・ devise :database_authenticatable, :registerable,
+                     :recoverable, :rememberable, :validatable
+
+                  database_authenticatable
+                        サインイン時にユーザーの正当性を検証するためにパスワードを暗号化してDBに登録します。認証方法としてはPOSTリクエストかHTTP Basic認証が使えます。
+                  registerable
+                        登録処理を通してユーザーをサインアップします。また、ユーザーに自身のアカウントを編集したり削除することを許可します。
+                  recoverable
+                        パスワードをリセットし、それを通知します。
+                  rememberable
+                        保存されたcookieから、ユーザーを記憶するためのトークンを生成・削除します。
+                  validatable
+                        Emailやパスワードのバリデーションを提供します。独自に定義したバリデーションを追加することもできます。
+            この意味がある。
