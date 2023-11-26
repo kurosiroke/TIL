@@ -372,3 +372,8 @@
                   validatable
                         Emailやパスワードのバリデーションを提供します。独自に定義したバリデーションを追加することもできます。
             この意味がある。
+
+            ・is_published_flag　公開非公開をラジオボダンで表示。
+            　　 #公開・非公開機能
+                    scope :published, -> {where(is_published_flag: true)}
+                    scope :unpublished, -> {where(is_published_flag: false)}
