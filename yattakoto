@@ -377,7 +377,7 @@
             　　 #公開・非公開機能
                     scope :published, -> {where(is_published_flag: true)}
                     scope :unpublished, -> {where(is_published_flag: false)}
-11/28  コメントをrailsで文字を装飾
+11/28  ・コメントをrailsで文字を装飾
       　　<div>
             <div class="mr-3"><!--右に３あける-->
               <%= speech.user.name %>
@@ -387,3 +387,18 @@
               <!--textのものはこれで自動改行される-->
             </div>
           </div>
+
+      ・colについて
+            <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 mx-auto">
+            ブレークポイントは次の通り
+                  クラス	ブレークポイント	コンテナの幅
+                  col-nn	<576px	None(auto)
+                  col-sm-nn	>=576px	540px
+                  col-md-nn	>=768px	720px
+                  col-lg-nn	>=992px	960px
+                  col-xl-nn	>=1200px	1140px
+                  col-xxl-nn	>=1400px	1320px
+
+      　　・ .mx-auto ←　固定幅のブロックレベルのコンテンツを水平にセンタリングする
+      　　・ <strong>: 強い重要性要素
+      　　・ 
