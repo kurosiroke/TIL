@@ -377,3 +377,13 @@
             　　 #公開・非公開機能
                     scope :published, -> {where(is_published_flag: true)}
                     scope :unpublished, -> {where(is_published_flag: false)}
+11/28  コメントをrailsで文字を装飾
+      　　<div>
+            <div class="mr-3"><!--右に３あける-->
+              <%= speech.user.name %>
+              <small class="text-black-50"><%= speech.created_at.strftime('%Y/%m/%d') %></small>
+              <!--smallで小さくし、Bootstrapを"text-black-50"とし、薄い灰色で表示させる-->
+              <%= simple_format(speech.speech) %>
+              <!--textのものはこれで自動改行される-->
+            </div>
+          </div>
