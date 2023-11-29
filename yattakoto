@@ -401,4 +401,6 @@
 
       　　・ .mx-auto ←　固定幅のブロックレベルのコンテンツを水平にセンタリングする
       　　・ <strong>: 強い重要性要素
-      　　・ 
+
+11/29  重なった内容のviewsを引用して使う。
+             <例><%= render 'public/attempts/attempt' %>
