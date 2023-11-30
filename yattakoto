@@ -404,3 +404,13 @@
 
 11/29  重なった内容のviewsを引用して使う。
              <例><%= render 'public/attempts/attempt' %>
+11/30 　before_actionを使用してログイン状態を確認する処理を実行
+             before_action :authenticate_admin! 
+                  ↳before_actionはRailsのコントローラに用意されたフィルターの一つで、アクションを実行する前に特定の処理を実行する。
+      　論理削除(ルーティング)
+             resources :profiles, only: [:edit,:update] #プロフィール
+             patch 'users/withdrawal' => 'users#withdrawal', as: 'withdrawal'  # 論理削除用のルーティング
+             resources :users, only: [:show] do
+                   get :ganbaru
+                   get :ganbatta 
+             end
