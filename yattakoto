@@ -414,3 +414,17 @@
                    get :ganbaru
                    get :ganbatta 
              end
+12/1　javaに手を出してみる。
+            java入門１を始める。
+                  public class Main {
+                  	public static void main(String[] args) {
+                  		System.out.println("hello world");
+                  	}
+                  }
+
+            この際、よくエラーとなるポイント。
+                  ・("hello world"); ←　この;を忘れている。
+                  ・(）　←　半角()と全角（）を混ぜている。
+                  ・printlm　←　printlnのつづりの間違い。
+                  ・Sとs、pとP　←　大文字を小文字にしたり、小文字を大文字にしたりといったミス。
+　　　　　　 この辺りはほかの言語も同じ。
