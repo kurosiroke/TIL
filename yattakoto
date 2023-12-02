@@ -459,3 +459,15 @@
             	}
             }
       int関数を使って整数型に変数をしているため、println関数での引数で何もつけずに変数だけを指定することで表示ができる。
+
+<演習問題>random関数を使用して「モンスターに、**のダメージを与えた。」と
+      出力をしてください。**のところには、50 ～ 99のランダムな数字を入れます
+            public class Main {
+                  public static void main(String[] args) {
+                        double rand = Math.random() * 50 + 50;
+                        int number = (int)rand;
+                        System.out.println("モンスターに、" + number + "のダメージを与えた");
+                  }
+            }
+      double rand = Math.random() * 99 + 50; これではエラーになった。
+      なぜ* 50 + 50;なの？？
