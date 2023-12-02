@@ -448,3 +448,14 @@
             // 		System.out.println("勇者は、モンスターをたおした");
             	}
             }
+      String関数を使って変数を指定して、実行することで編集がしやすくできている。
+
+      // 数の表示とサイコロ
+            public class Main {
+            	public static void main(String[] args) {
+            		double rand = Math.random() * 6 + 1;        ←　６のうち１から表示する指定をしてある。
+            		int number = (int)rand;                     ←　int関数を使って、変数を整数型にしている
+            		System.out.println("サイコロの目は" + number + "です");
+            	}
+            }
+      int関数を使って整数型に変数をしているため、println関数での引数で何もつけずに変数だけを指定することで表示ができる。
