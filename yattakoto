@@ -438,4 +438,13 @@
 12/2　JavaをHTML表示する。
       ("<p>モンスターがあらわれた</p>"); ⇒　<p>モンスターがあらわれた</p>
       ("<b>モンスターがあらわれた</b>"); ⇒　<b>モンスターがあらわれた</b>
-      
+
+      Javaで変数を使う
+            public class Main {
+            	public static void main(String[] args) {
+               変数→  String player = "勇者";
+            	    System.out.println(player + "は、荒野を歩いていた");
+            // 		System.out.println("勇者は、モンスターと戦った");
+            // 		System.out.println("勇者は、モンスターをたおした");
+            	}
+            }
