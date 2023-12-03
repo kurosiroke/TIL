@@ -472,4 +472,33 @@
       double rand = Math.random() * 99 + 50; これではエラーになった。
       なぜ* 50 + 50;なの？？
 12/3 java算術演算子　+-*/% 
-            */が優先される()で優先計算変更。
+            *や/が優先で計算される優先順位があるが、()で優先順位変更が変えられる。
+
+                  ★足し算で計算する
+                  public class Main {
+                  	public static void main(String[] args) {
+                  	    int Number = 1234 * 5678 / 2;
+                  		System.out.println(Number);
+                  	}
+                  }
+
+                  ★変数同士を掛け算で計算する
+                  public class Main {
+                  	public static void main(String[] args) {
+                  		int a = 31;
+                  		int b = 17;
+                  		System.out.println(a * b);
+                  
+                  	}
+                  }
+
+                  ★変数同士であまりのある計算をする
+                  public class Main {
+                  	public static void main(String[] args) {
+                  		int x = 8;
+                  		int y = 5;
+                  		System.out.println(x % y);
+                  
+                  	}
+                  }
+
