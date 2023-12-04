@@ -510,3 +510,28 @@
                   	}
                   }
 
+12/4　＃08:値段を計算してみよう
+      // 値段を計算する
+            public class Main {
+            	public static void main(String[] args) {
+            		int apple_price = 350; //リンゴの単価
+            		int apple_num = 5;     //リンゴを買う数
+            		System.out.println("リンゴの単価:" + apple_price + "円");
+            		System.out.println("リンゴを買う数:" + apple_num + "個");
+            		
+            		int total =　apple_price * apple_num;　　　　　←　　合計はtotal = で出す。
+            		System.out.println("合計金額" + total + "円");
+            	}
+            }
+            // 値段を計算する
+            public class Main {
+            	public static void main(String[] args) {
+            		int apple_price = (int)(Math.random() * 3 + 1) * 100; 　←　リンゴの単価をランダムで3までとして()が優先計算されるため、そのあとに*100が計算されている。
+            		int apple_num = (int)(Math.random() * 10 + 1);          ←　リンゴの個数をランダムで10までとして、1から表示させる。
+            		System.out.println("リンゴの単価:" + apple_price + "円");
+            		System.out.println("リンゴを買う数:" + apple_num + "個");
+            		
+            		int total =apple_price * apple_num;
+            		System.out.println("合計金額" + total + "円");
+            	}
+            }
