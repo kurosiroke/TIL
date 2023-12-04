@@ -510,7 +510,7 @@
                   	}
                   }
 
-12/4　＃08:値段を計算してみよう
+12/4　＃08:値段を計算してみよう　java
       // 値段を計算する
             public class Main {
             	public static void main(String[] args) {
@@ -549,3 +549,19 @@
             	}
             }
 　                        答えが合わなかった理由は、合計の部分の文章の。を忘れていたため。
+
+      // データの種類
+            int number = 100;	 これが数値型
+            String text = "paiza";	これが文字列
+            結合するときに、Rubyと違って、println()の中でさらに()で数値かどうかを指定することはないため、変数同士をそのままでつなげる。
+
+            public class Main {
+            	public static void main(String[] args) {
+            		int number = 100;	// 数値
+            		String text = "paiza";	// 文字列
+            		System.out.println(number);
+            		System.out.println(text);
+                        System.out.println(number + text);
+            	}
+            }
+
