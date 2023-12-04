@@ -535,3 +535,17 @@
             		System.out.println("合計金額" + total + "円");
             	}
             }
+
+            ★演習課題　期待する出力値
+                        体重100キロのスライムが、X匹あらわれた。
+                        スライムの合計体重は、Yキロです。（ただし、Xは、1 ～ 10の整数） 
+            public class Main {
+            	public static void main(String[] args) {
+            		int number =(int)(Math.random() * 10 + 1);	// 匹数 1 ～ 10までランダム表示
+            		System.out.println("体重100キロのスライムが、" + number + "匹あらわれた。");
+            
+            		int total = number * 100;
+            		System.out.println("スライムの合計体重は、" + total + "キロです。");
+            	}
+            }
+
