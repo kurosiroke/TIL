@@ -578,3 +578,42 @@
                   ↳　String a = "01234";
 		         String b = "56789";
                          数値型で文字列は表示できないため、文字列で数値を表示するにはStringにかえて""で囲む必要がある。
+
+12/5　Java入門2 01:IF文による条件分岐
+	// if文による条件分岐
+		public class Main {
+			public static void main(String[] args) {
+		        int Number = 2;
+		        if (Number == 1) {
+		                System.out.println("スキ！"); //条件式が成立したときの処理
+		        } else {
+		                System.out.println("キライ"); //条件式が成立しなかったときの処理
+		        }
+			}
+		}
+	☆エラーとなる原因は{}を閉じていない、;を忘れているなどが多いため、気を付ける！
+
+	★演習課題　if式
+		// if文による条件分岐　ifのみ
+		public class Main {
+			public static void main(String[] args) {
+				int number =(int)(Math.random() * 3 + 1);
+				System.out.println("あなたの順位は" + number + "位です");
+				if (number == 1){
+				    System.out.println("おめでとう！");    
+				}
+			}
+		}
+		// if文による条件分岐 elseを表示する
+		public class Main {
+			public static void main(String[] args) {
+				int number =(int)(Math.random() * 5 + 1);
+				System.out.println("あなたの順位は" + number + "位です");
+				if (number == 1){
+				    System.out.println("おめでとう！");
+				} else {
+				    System.out.println("あと少し！");
+				}
+			}
+		}
+		☆Rubyとは違ってendではなく、{}で閉じる。
