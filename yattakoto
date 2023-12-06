@@ -683,3 +683,16 @@
 			}
 		}
 	<=　以下を示す。矢印は以下と覚えて置く。
+
+	★演習問題
+	期待する出力値　omikujiの中身は(30..100)なので大吉　omikujiの中身は(1..29)なので大凶
+		public class Main {
+			public static void main(String[] args) {
+				int omikuji = (int)(Math.random() * 100 + 1);  // randomメソッドについては次のチャプターで説明します
+				if (omikuji >= 30) {				// >= 以上を示すため、30以上と指定している。　　　　
+					System.out.println("omikujiの中身は" + omikuji + "なので大吉");
+				} else {
+					System.out.println("omikujiの中身は" + omikuji + "なので大凶");
+				}
+			}
+		}
