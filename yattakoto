@@ -658,3 +658,28 @@
 			☆彡　< 未満を示すため、20を含まない。
 		② 6位以上の場合は「●位入賞」と表示し、7位以下だったら「●位入賞圏外」と表示する。
 			＞では未満ではないので、＜に変換することで未満とすることが出来るため、７位を入賞圏外にする子ができる。
+
+12/6 ＃04:おみくじを作ってみよう
+		// おみくじを作る
+		// 比較演算子  ==  >  <   >=  <=  !=
+		// 大吉  中吉  小吉  凶  大凶
+		public class Main {
+			public static void main(String[] args) {
+		        int omikuji = (int)(Math.random() * 10 + 1);
+		        System.out.println(omikuji);		//intの数字を表示している
+			        if (omikuji == 1) {
+			            System.out.println("大吉");
+			        } else if (omikuji == 2) {
+			            System.out.println("中吉");
+			        } else if (omikuji <= 4) {      //3.4
+			            System.out.println("小吉");
+			        } else if (omikuji <= 6) {	//5.6
+			            System.out.println("吉");
+			        } else if (omikuji <= 8){	//7.8
+			            System.out.println("凶");
+			        } else {			//9.10
+			            System.out.println("大凶");
+			        }
+			}
+		}
+	<=　以下を示す。矢印は以下と覚えて置く。
