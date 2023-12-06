@@ -696,3 +696,25 @@
 				}
 			}
 		}
+	＃05:RPGのクリティカルヒットを再現
+		// RPGのクリティカルヒットを再現
+		// 比較演算子 == > < >= <= !=
+		
+		
+		// スライムと戦っている。
+		// 1から10のサイコロをふって、
+		// 6未満：サイコロの目だけダメージを与えたと表示。
+		// 6以上：クリティカルヒットとして、100のダメージを与えたと表示。
+		public class Main {
+			public static void main(String[] args) {
+		        int hit = (int)(Math.random() * 10 + 1);
+		        System.out.println(hit);      //デバック用で作成中
+			    	 if (hit < 6) {       //６未満
+			    	    System.out.println("スライムに" + hit + "ダメージをあたえた");
+			    	} else {
+			    	    System.out.println("クリティカルヒット！スライムに100のダメージをあたえた");
+			    	}
+			}
+		}
+
+	
