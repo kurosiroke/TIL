@@ -777,3 +777,23 @@
 			}
 		}
 		  
+12/8 Java入門　＃６　演習問題。　
+			「西暦年から昭和年を計算する」
+			期待する出力値
+			-----
+			西暦1988年は昭和63年です。
+			-----
+			西暦1926年は昭和1年です。
+			-----
+			// 西暦年から昭和年を求める
+		public class Main {
+			public static void main(String[] args) {
+				int seireki = (int)(Math.random() * 63 + 1926);
+				System.out.print("西暦" + seireki + "年は");
+				昭和は西暦から1925を引いた歴のため、それを変数に代入する式を作る。
+					↓
+				int showa = seireki - 1925;
+				System.out.println("昭和" + showa + "年です。");
+			}
+		}
+
