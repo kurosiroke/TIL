@@ -803,3 +803,18 @@
 		if (number1 == 1 && number2 == 1){
 		}
 		こうすることで、複数の条件で指定できる。
+12/10 Java入門　★演習問題　
+		1から10までの数値をランダムに生成して、順位として表示します。ここにif文を追加して、2位から5位の時には「あと少し」と表示する
+			// 順位に合わせてメッセージを表示する
+			
+			public class Main {
+			    public static void main(String[] args) {
+			        double rand = (Math.random() * 10) + 1;
+			        int number1 = (int) rand;
+			        int number2 = (int) rand;		←　二つ目のnumber変数を作成することで、条件の範囲を指定できる。
+			        System.out.println("あなたの順位は" + number1 + "位です");
+			        if (number1 >= 2 && number2 <= 5){	← 作成した変数を指定の条件にし、&&でつなぐことで条件が作れる。
+			        System.out.println("あと少し");
+			        }
+			    }
+			}
