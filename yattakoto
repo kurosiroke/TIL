@@ -818,6 +818,23 @@
 			        }
 			    }
 			}
+
 		＃08:【補講】複数の条件を組み合わせてみよう - OR
 		どちらかの条件がそろったときに使うものはOR。
 		コードのifで指定するときは　(変数 ||　変数)　で区切って指定すると反映される。
+12/11 Java入門　★演習問題　if文を追加して、55以下か70以上の時に「不快です」と表示する
+		// 不快指数
+		
+		public class Main {
+		    public static void main(String[] args) {
+		        double rand = (Math.random() * 71) + 30;
+		        int discomfort = (int) rand;
+		        System.out.println("不快指数は" + discomfort + "です。");
+		        if (discomfort <= 56 || discomfort>= 69){	← <= 指定の数を含む意味の以下　 >= 指定の数を含む意味の以上。
+		            System.out.println("不快です");
+		        } 
+		    }
+		}
+		||でつないでいる上に、不等号での指定もしているため、範囲が大幅に指定できている。
+		実行結果は、56以下と69以上は不快と表示する。ということをしてできている。
+		
