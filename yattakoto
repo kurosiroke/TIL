@@ -837,4 +837,21 @@
 		}
 		||でつないでいる上に、不等号での指定もしているため、範囲が大幅に指定できている。
 		実行結果は、56以下と69以上は不快と表示する。ということをしてできている。
-		
+
+	 ＃09:【補講】条件の評価結果を理解しよう
+		ifの条件が成立したときはtrue。成立しなければfalse。
+		これはRubyと同じ。
+			// 条件の評価結果
+			public class Main {
+			    public static void main(String[] args) {
+			        int number = 1;
+			        boolean flag = number == 1;  ← flag変数にnumber == 1を代入しているため、(flag)で指定できている。
+			        if (flag) {
+			            System.out.println("スキ！");
+			        } else {
+			            System.out.println("キライ");
+			        }
+			        System.out.println(flag);	←←　trueかfalseかを表示するために書いている。
+			    }
+			}
+		boolean　←←←　文字列に使うもの。
