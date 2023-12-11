@@ -855,3 +855,20 @@
 			    }
 			}
 		boolean　←←←　文字列に使うもの。
+	★演習問題　
+	flag変数がtrueの時に「入賞おめでとう」と表示する
+		// 順位に合わせてメッセージを表示する
+		
+		public class Main {
+		    public static void main(String[] args) {
+		        double rand = (Math.random() * 10) + 1;
+		        int number = (int) rand;
+		        System.out.println("あなたの順位は" + number + "位です");
+		        
+		        boolean flag = number <= 3;
+		        if (flag) {
+		            System.out.println(flag);
+		        }
+		    }
+		}
+	if文に(flag)を条件にすると、flagで設定した数値によって表示が行える。
