@@ -906,3 +906,14 @@
 	上から文字列としての123と、整数型の123、実数型の123.0が表示される。
 	確認する際は、整数型と実数型の(text)の後に　* 10を行う。
 	そうすることで、10がかけられるので、確認できる。
+
+	★演習問題 // 文字列を数値に変換しよう
+	   number変数の値を数値に変換して出力
+		public class Main {
+		    public static void main(String[] args) {
+		        String text = "0.08";
+		        System.out.println(Double.parseDouble(text)); 　　←実数型にするため、Doubleを指定する。
+		    }
+		}
+
+		
