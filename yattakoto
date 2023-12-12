@@ -915,5 +915,28 @@
 		        System.out.println(Double.parseDouble(text)); 　　←実数型にするため、Doubleを指定する。
 		    }
 		}
+	＃11:【補講】税込み金額を計算する 	
+		public class Main {
+		    public static void main(String[] args) {
+		        int price = 1980;
+		        System.out.println("定価:" + price + "円");
+		        int discountPrice = (int)(price * 0.85);   //実数を整数(int)に変換している　praiceが15%offだった場合
+		        System.out.println("割引金額は、" + discountPrice + "円です。");
+		        int amount = (int)(discountPrice * 1.08);   //消費税が8%をのせる
+		        System.out.println("税込み金額は、" + amount + "円です。");
+		        int person = 5;
+		        System.out.println("人数が、" + person + "人の場合。");
+		        int amountPerPerson = amount / person;
+		        int remainder = amount % person;　　←　余りの計算している
+		        System.out.println("一人当たり" + amountPerPerson + "円、余りは" + remainder + "円です。");
+		    }
+		}
+	実行結果
+		定価:1980円
+		割引金額は、1683円です。
+		税込み金額は、1817円です。
+		人数が、5人の場合。
+		一人当たり363円、余りは2円です。
 
+		
 		
