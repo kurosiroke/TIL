@@ -890,4 +890,19 @@
 		　・float   32ビット単精度小数点
 		　・double  64ビット単精度小数点
 		用途に分けて使い分ける。
-	
+	Javaでデータ型を変更できる。
+	　double number1 = 3.14;      　　　　←double(実数)を変数で使う
+	　System.out.println(number1);　　　　←指定した変数を表示するため、3.14が表示できる。
+	　System.out.println((int)number1);　←(int)を指定して変数を出すようにしているため小数点以下を消すことが出来る。
+			↑
+	　データ型の変更をデータのキャストという。
+	　Javaでは、データ型の前に()をつけて指定すると、データ型をキャストできる。
+
+	"123"の文字列を整数型と実数型に変更する。
+		String text ＝ "123";
+		System.out.println(text);
+		System.out.println(Integer.parseInt(text));
+		System.out.println(Double.parseDouble(text));
+	上から文字列としての123と、整数型の123、実数型の123.0が表示される。
+	確認する際は、整数型と実数型の(text)の後に　* 10を行う。
+	そうすることで、10がかけられるので、確認できる。
