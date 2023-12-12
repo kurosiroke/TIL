@@ -937,6 +937,17 @@
 		税込み金額は、1817円です。
 		人数が、5人の場合。
 		一人当たり363円、余りは2円です。
-
+	★演習問題
+	間違いを正せ。
+	  五行目のint amount = price / 100 * weight;　これを、書き換える。
+	// 肉の量り売り
+	public class Main {
+	    public static void main(String[] args) {
+	        int price = 128;
+	        int weight = 300;
+	        int amount = (price * weight) / 100;　←　(int)型に変更は特にしなくてもいけた。
+		System.out.println("100グラム" + price + "円の肉、" + weight + "グラムは、" + amount + "円です。");
+	    }
+	}
 		
 		
