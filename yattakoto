@@ -959,7 +959,7 @@
 		System.out.println("lase" + i)
 			☝これを入れる。
 
-	★演習問題「「ハロー、paizaラーニング」と10回表示する」
+	★演習問題①「「ハロー、paizaラーニング」と10回表示する」
 	// whileによるループ処理
 		public class Main {
 		    public static void main(String[] args) {
@@ -970,3 +970,15 @@
 			}
 		    }
 		}
+	★演習問題②　「数値を0から15まで表示する」
+	// whileによるループ処理
+		public class Main {
+		    public static void main(String[] args) {
+		        int i = 0;
+		        while (i <= 15){	☜　15以下を表示するため、<=を指定する。
+		            System.out.println(i);
+		            i = i + 1;
+		        }
+		    }
+		}
+		
