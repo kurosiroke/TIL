@@ -958,3 +958,14 @@
 		whileの条件式の{}の後に
 		System.out.println("lase" + i)
 			☝これを入れる。
+
+	// whileによるループ処理
+		public class Main {
+		    public static void main(String[] args) {
+			int i = 0;  		☜　①デバックのため、i変数を作って、0を指定する。
+			while (i <= 10){	☜　②　10以下の条件を指定する。
+			System.out.println("ハローpaizaラーニング" + i);　☜　③　デバックのため、i変数の数字を出力するようにしている。
+			i = i + 1;		☜　④　i変数にi+1を代入することで、カウンタ変数を更新している。
+			}
+		    }
+		}
