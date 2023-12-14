@@ -970,15 +970,35 @@
 			}
 		    }
 		}
+	
+	※ i = i + 1;   ☜　④ これがないと、無限ループに陥り、エラーとなるため、注意する※
+				無限ループに陥った場合、システムを強制終了するか、パソコンの電源を抜かないといけなくなる。
+
 	★演習問題②　「数値を0から15まで表示する」
 	// whileによるループ処理
 		public class Main {
 		    public static void main(String[] args) {
 		        int i = 0;
 		        while (i <= 15){	☜　15以下を表示するため、<=を指定する。
+
 		            System.out.println(i);
 		            i = i + 1;
 		        }
 		    }
 		}
-		
+
+12/14 ＃02:条件によるくり返し処理2 - while
+		★演習課題「1から10までの偶数を表示する」(2,4,6,8を表示する)
+		// whileによるループ処理
+			public class Main {
+			    public static void main(String[] args) {
+			        int i = 2;  ☜ ①　変数に入る値は２を入れる
+			        while (i <= 10) {
+			            System.out.println(i);
+			            i = i + 2;　☜ ② ２づつ足していくという条件にする。
+			        }    
+			    }
+			}
+		これで偶数で表示できた。
+
+
