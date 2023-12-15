@@ -1022,7 +1022,31 @@
 
 		☝　整数型として表示するには、Scanner sc = new Scanner(System.in);のあとのStringを変える。
 		　　		☟
-		　　int data = sc.nextInt();	☜intの変数指定は、Iが大文字になる。
+		　　int data = sc.nextInt();	☜intの変数指定は、Iが大文字になる。数値として使う際、nexIntメソッドを使う。
 		　　System.out.println(data);	☜文字列を消して、数値型のみ表示するようにする。
 				☟
 		整数型かを確認するには、(data * 2)などとし、計算を行い、行えればコードは正しいことになる。
+
+		★ 演習課題「標準入力からテキストを取得する」
+			// 標準入力
+			import java.util.*;
+			
+			public class Main {
+			    public static void main(String[] args) {
+			        Scanner sc = new Scanner(System.in);
+			        String data = sc.next();　☜文字列型にして、最後に()を忘れない。
+			        System.out.print(data);
+			    }
+			}
+
+		★　演習②　「標準入力から数値を取得して計算する」
+			/ 標準入力
+			import java.util.*;
+			
+			public class Main {
+			    public static void main(String[] args) {
+				Scanner sc = new Scanner(System.in);
+				int data = sc.nextInt();		☜整数型にするため、intを指定。
+				System.out.println(data * 100);
+			    }
+			}
