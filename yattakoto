@@ -1050,4 +1050,24 @@
 				System.out.println(data * 100);
 			    }
 			}
-	あまり理解していないため、再度演習をやってみる。
+	☆　あまり理解していないため、再度演習をやってみる。
+
+12/16  ＃08:複数データを読み込んでみよう
+	// 標準入力とループ処理
+		import java.util.*;
+		
+		public class Main {
+		    public static void main(String[] args) {
+			Scanner sc = new Scanner(System.in);
+			int count = sc.nextInt();　☜繰り返す数をはじめに指定する。
+			System.out.println("データ個数" + count); ☜デバック用　一行目に繰り返す数が来るため、整数型を一行目に表示するためのもの
+			
+			String data;
+			for (int i = 0; i < count; i++) {　
+			    data = sc.next();
+			    System.out.println("hello " + data);
+			}
+		    }
+		}
+
+
