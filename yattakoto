@@ -1183,4 +1183,19 @@
 		        System.out.println(item[2]);
 		    }
 		}
+
+	★演習問題③　// 変数で、配列に代入する
+		public class Main {
+		    public static void main(String[] args) {
+		        String player_1 = "勇者";
+		        String player_2 = "魔法使い";
+		        String player_3 = "戦士";
+		        // player_1 ~ 3を、配列に代入して、printlnメソッドで出力してください。
+		        String [] tame = {player_1, player_2, player_3};
+		        System.out.println(tame[0]);
+		        System.out.println(tame[1]);
+		        System.out.println(tame[2]);
+		    }
+		}
+	入門４はここまでで、有料となるため、入門５を始める。
 		
