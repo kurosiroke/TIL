@@ -1121,3 +1121,28 @@
 					が用意されている(下図)。
 				つまり、変数に１を足すということ？
 			　　３・System.out.println(i)　☜表示させるのはi変数だけでいい。
+
+12/17 　昨日詰まったというかわからなった演習問題を再度やってみるも、まちがえてしまった。
+	やはり、for (int i = 入力１; i <= 入力２; i++)これがうまく理解できていないことを再確認した。
+
+	★演習課題３「指定行数分、標準入力を取得する」
+	三行の文字を標準入力で修得する。
+		// 標準入力とループ処理
+			import java.util.*;
+			
+			public class Main {
+			    public static void main(String[] args) {
+			        Scanner sc = new Scanner(System.in);
+			        int count = sc.nextInt();
+			        String data;
+			        for (int i = 0; i < count; i++ ){
+			        data = sc.next();
+			        System.out.println(data);
+			        }
+			    }
+			}
+		これについては動画で説明されていたため、理解はできた。
+	最後のチャプターは有料でできなかったため、入門３を終える。
+
+	Java入門４
+		
