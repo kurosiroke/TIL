@@ -1144,5 +1144,22 @@
 		これについては動画で説明されていたため、理解はできた。
 	最後のチャプターは有料でできなかったため、入門３を終える。
 
-	Java入門４
+	Java入門４ 配列を指定する。
+		Rubyと同じように配列を指定する。
+		// 配列を作成する
+			
+		public class Main {
+		    public static void main(String[] args) {
+			String player_1 = "勇者";　　☜文字列でplayer_1変数を作って情報を入れている。
+			String player_1 = "魔法使い";
+			System.out.println(player_1);☜上記で作った変数を表示させる。
+			System.out.println(player_2);
 		
+			String[] team = {"戦士", "忍者",player_1}; ☜文字列で指定し、[]を置くことで、配列の変数名が指定でき、= {}；で配列ができる。
+			System.out.println(team[0]);
+			System.out.println(team[1]);
+			System.out.println(team[2]);
+		    }
+		}
+		
+				
