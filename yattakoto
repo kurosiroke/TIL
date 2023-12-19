@@ -1214,4 +1214,25 @@
 		　・3D-CGの空間座標　←　２次元配列ではなく、3次元配列を使うとやりやすい。
 	
 	チャプター２　2次元配列を作成する
+
+// 2次元配列を作成してみよう
+
+12/19 ★演習課題「2次元配列を作成してみよう」
+		public class Main {
+		    public static void main(String[] args) {
+		        String[] item1 = {"木の棒", "こん棒"};
+		        String[] item2 = {"おにぎり", "おにぎり"};
+		        String[] item3 = {"毒消し", "薬草"};
 		
+		        // item1 ~ 3を、basket配列に代入してください。
+		        String [][] basket = {item1, item2, item3};　☜　上記のitemたちを指定するため、文字型指定で[]を2つ付けて変数を入れる。
+		
+		        System.out.println(basket[0][0]);
+		        System.out.println(basket[0][1]);
+		        System.out.println(basket[1][0]);
+		        System.out.println(basket[1][1]);
+		        System.out.println(basket[2][0]);
+		        System.out.println(basket[2][1]);
+		    }
+		}
+
