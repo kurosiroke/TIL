@@ -1236,7 +1236,7 @@
 		    }
 		}
 
-	★演習課題「配列の中身を出力してみよう」
+	★演習課題２　「配列の中身を出力してみよう」
 		// 配列の中身を出力してみよう
 		public class Main {
 		    public static void main(String[] args) {
@@ -1251,4 +1251,4 @@
 		        System.out.println(array[2][1]);
 		    }
 		}
-
+	※このチャプターはここまでで無料は終わり※
