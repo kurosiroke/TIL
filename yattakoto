@@ -1280,6 +1280,17 @@
 		    }
 		これにより、処理が実行される。
 
-
+	★演習課題3　「間違い探し」
+		// 間違い探し　public class Main{}の範囲の外でsayHalloメソッドを入力していたため、エラーになっていた。
+		
+		public class Main {
+		    public static void main(String[] args) {
+		        sayHello();
+		    }
+		    public static void sayHello() {
+		        System.out.println("hello paiza");
+		    }
+		
+		}
 
 
