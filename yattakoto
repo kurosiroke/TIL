@@ -1293,4 +1293,20 @@
 		
 		}
 
+12/21 Java 入門７ クラスを作る
+	// クラスを作成する
+		
+		public class Main {
+		    public static void main(String[] args) {
+		        Player player1 = new Player();
+		        player1.walk();
+		    }
+		}
+		
+		class Player {
+		    public void walk() {
+		        System.out.println("勇者は荒野を歩いていた。");
+		    }
+		}
 
+このままではclassを作るたびに追加していかないといけなくなるため、次のチャプターで説明するといわれたが、有料のため、先延ばしする。
