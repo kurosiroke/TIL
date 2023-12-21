@@ -1325,3 +1325,23 @@
 		        System.out.println("hello paiza");
 		    }
 		}
+
+	★演習問題２　// クラスにメソッドを定義しよう
+		
+		public class Main {
+		    public static void main(String[] args) {
+		        Greeting paiza = new Greeting();
+		        paiza.sayHello();
+		    }
+		}
+		
+		class Greeting {
+		    // この下に、sayHelloメソッドを記述する
+		    public void sayHello(){
+		        System.out.println("hello java");
+		    }
+		    
+		}
+	★演習問題３
+		ｇがＧになってないだけ。
+		クラス名はＧの大文字にする。呼び出す際も、Ｇで大文字を使う。
