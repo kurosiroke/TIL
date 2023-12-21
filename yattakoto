@@ -1310,3 +1310,18 @@
 		}
 
 このままではclassを作るたびに追加していかないといけなくなるため、次のチャプターで説明するといわれたが、有料のため、先延ばしする。
+
+	★演習課題１　// インスタンスを実体化しよう
+		public class Main {
+		    public static void main(String[] args) {
+		        // この下でGreetingオブジェクトをつくり、メソッドを呼び出す
+		        Greeting greeting1 = new Greeting();
+		        greeting1.sayHello();
+		    }
+		}
+		
+		class Greeting {
+		    public void sayHello() {
+		        System.out.println("hello paiza");
+		    }
+		}
