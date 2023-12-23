@@ -1374,5 +1374,23 @@
 		    }
 		}
 
-	★演習問題２　
+	★演習問題3　間違い探し
+	class Hello extends Greeting {
+	　　　☝
+	このclass Helloがhelloになっていたため、
+
+	Main.java:4: error: cannot find symbol
+		Hello player = new Hello();
+		^
+	  symbol:   class Hello
+	  location: class Main
+	Main.java:4: error: cannot find symbol
+		Hello player = new Hello();
+				   ^
+	  symbol:   class Hello
+	  location: class Main
+	2 errors
+
+	このエラーが表示されていた。
+
 
