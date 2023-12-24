@@ -1394,4 +1394,44 @@
 	このエラーが表示されていた。
 
 12/23 Java入門９　＃02:HashMapを作る
-	
+	★　演習１　HashMapに、以下のエントリーを追加して、値だけを出力してください。
+	// 指定の文字をハッシュにする
+		import java.util.HashMap;
+		
+		public class Main {
+		    public static void main(String[] args) {
+		        HashMap<String, Integer> skills = new HashMap<String, Integer>();
+		        skills.put("攻撃力", 150);
+		        System.out.println(skills.get("攻撃力"));
+		// この下に、エントリーを追加する
+		        skills.put("防御力", 100);
+		        skills.put("魔法力", 200);
+		        skills.put("移動力", 380);
+		        System.out.println(skills.get("防御力"));
+		        System.out.println(skills.get("魔法力"));
+		        System.out.println(skills.get("移動力"));
+		    }
+		}
+		 System.out.println(skills.get(""))を増やすだけでいい？
+		よくわからないが、これでOKときた。
+
+	★　演習２　演習課題「間違い探し」
+	// 間違い探し intをIntegerに変更する。
+		import java.util.HashMap;
+		
+		public class Main {
+		    public static void main(String[] args) {
+		        HashMap<String, Integer> skills = new HashMap<String, Integer>();
+		        skills.put("攻撃力", 150);
+		        System.out.println(skills.get("攻撃力"));
+		        skills.put("防御力", 100);
+		        System.out.println(skills.get("防御力"));
+		        skills.put("魔法力", 200);
+		        System.out.println(skills.get("魔法力"));
+		        skills.put("移動力", 380);
+		        System.out.println(skills.get("移動力"));
+		
+		    }
+		}
+		
+
