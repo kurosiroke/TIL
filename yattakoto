@@ -1433,5 +1433,10 @@
 		
 		    }
 		}
-		
+
+	HashMap<String, int> skills = new HashMap<String, int>();
+				☝
+ 	HashMap<String, Integer> skills = new HashMap<String, Integer>();
+		数値で表示させるには、intではエラーとなるため、Integerとすることを忘れないようにする。
+
 
