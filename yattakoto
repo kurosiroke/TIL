@@ -1439,7 +1439,7 @@
  	HashMap<String, Integer> skills = new HashMap<String, Integer>();
 		数値で表示させるには、intではエラーとなるため、Integerとすることを忘れないようにする。
 
-12/25 Java入門１０ 例外処理
+12/25～12/28 Java入門１０ 例外処理
 	// 例外処理 - 0除算
 
 		public class Main {
