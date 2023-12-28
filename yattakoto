@@ -1463,3 +1463,21 @@
 		- catch : 例外ハンドラー。例外発生時の対応処理
 		- finally : 例外が発生してもしなくても、必ず実行する処理
 	これにより、例外が発生しても処理が実行され、Hello WorldとHello Javaが表示される。
+★演習問題
+// 例外処理を定義しよう
+
+public class Main {
+    public static void main(String[] args) {
+        String[] enemies = {"スライム", "ドラゴン", "魔王" };
+
+        try {
+            int number = 3;
+            System.out.println("勇者は敵に遭遇した");
+            System.out.println("勇者は" + enemies[number] + "と戦った");
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            System.out.println("勇者は勝利した");
+        }
+    }
+}
