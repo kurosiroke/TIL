@@ -1499,3 +1499,13 @@ public class Main {
 }
 
 System.out.printlnの("勇者は敵に遭遇した");と("勇者は" + enemies[number] + "と戦った");、がtry{}の中に入っていなかったため、エラーが出ていた。
+12/29 演習課題をやり直してみる。
+	try {
+		int number = ;
+		System.out.println(出力したいもの);
+	}catch (Exception e) {
+            e.printStackTrace();　例外によって生じるエラーを表示させる
+        } finally {
+		System.out.println(結果として表示させたいもの);
+	}
+	
