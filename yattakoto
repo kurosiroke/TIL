@@ -1509,3 +1509,5 @@ System.out.printlnの("勇者は敵に遭遇した");と("勇者は" + enemies[n
 		System.out.println(結果として表示させたいもの);
 	}
 	
+12/30 c#入門を始める。
+		
