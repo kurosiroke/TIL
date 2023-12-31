@@ -1544,3 +1544,4 @@ System.out.printlnの("勇者は敵に遭遇した");と("勇者は" + enemies[n
 	        Console.WriteLine("<p>hello world</p>");
 	    }
 	}
+変数はJavaと似ている、
