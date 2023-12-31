@@ -1537,4 +1537,10 @@ System.out.printlnの("勇者は敵に遭遇した");と("勇者は" + enemies[n
 12/31 C#のコメントアウト　//を付けることで、コメントアウトされる。
 	これはJavaと同じ。
 
-	
+   // HTMLを表示する Console.WriteLine("");の""の間に<h1>や<p>を入れる。
+	using System;
+	public class Program{
+	    public static void Main(){
+	        Console.WriteLine("<p>hello world</p>");
+	    }
+	}
