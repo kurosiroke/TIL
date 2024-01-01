@@ -1568,3 +1568,17 @@ System.out.printlnの("勇者は敵に遭遇した");と("勇者は" + enemies[n
        　　 Console.WriteLine("モンスターに" + number + "のダメージを与えた");
    　　 }
 　　}
+
+	// 演算子で計算してみよう
+	using System;
+	public class Program{
+	    public static void Main(){
+	        // ここに計算式を書いて、出力する
+	        var nunber = 1234 * 5678 / 2;
+	        Console.WriteLine(nunber);
+	    }
+	}
+	演算子についてはJavaと同じ。
+	違うのは出力の設定
+	System.out.println();　←　Java
+	Console.WriteLine();   ←　C#
