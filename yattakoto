@@ -1556,5 +1556,15 @@ System.out.printlnの("勇者は敵に遭遇した");と("勇者は" + enemies[n
 	インスタンス化:
 	var random = new Random();
 	
-	var random = new Random(1,101); こうすることで、100までの範囲が指定される。
-	()の中の数字は、(以上,未満);となる。
+	var number = random.Next(1,101); こうすることで、100までの範囲が指定される。
+	(引数);の中の数字は、(以上,未満);となる。
+
+// モンスターに与えるダメージを50～99までの値をランダムで出力する
+　　using System;
+　　public class Program{
+  　　  public static void Main(){
+    　　    var random = new Random();          // クラスを実体化
+       　　 var number = random.Next(50,100);         // 最大値は未満なので注意（目的の数値 + 1）☜　ここの(引数)に数字を入れる
+       　　 Console.WriteLine("モンスターに" + number + "のダメージを与えた");
+   　　 }
+　　}
