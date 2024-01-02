@@ -1582,3 +1582,20 @@ System.out.printlnの("勇者は敵に遭遇した");と("勇者は" + enemies[n
 	違うのは出力の設定
 	System.out.println();　←　Java
 	Console.WriteLine();   ←　C#
+
+1/2  ＃08:値段計算をしてみよう
+	// 値段計算をしてみよう
+		using System;
+		public class Program{
+		    public static void Main(){
+		        var random=new Random();
+		        var bounty_price=random.Next(1,4)*1000;
+		        var bounty_num=random.Next(10)+1;
+		        var i=bounty_price / bounty_num;
+		        var a=bounty_price % bounty_num;
+		        Console.WriteLine("賞金は"+bounty_price+"円です");
+		        Console.WriteLine(bounty_num + "人で分けようと思ってます");
+		        Console.WriteLine("ひとり" + i + "円です");
+		        Console.WriteLine("余り" + a + "円です");
+		    }
+		}
