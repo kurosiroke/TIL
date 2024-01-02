@@ -1590,7 +1590,7 @@ System.out.printlnの("勇者は敵に遭遇した");と("勇者は" + enemies[n
 		    public static void Main(){
 		        var random=new Random();
 		        var bounty_price=random.Next(1,4)*1000;
-		        var bounty_num=random.Next(10)+1;
+		        var bounty_num=random.Next(10)+1;	☜(10)+1これの+1は、小数点以下が出ないように指定してる。
 		        var i=bounty_price / bounty_num;
 		        var a=bounty_price % bounty_num;
 		        Console.WriteLine("賞金は"+bounty_price+"円です");
