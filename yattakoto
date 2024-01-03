@@ -1628,4 +1628,18 @@ System.out.printlnの("勇者は敵に遭遇した");と("勇者は" + enemies[n
 		        Console.WriteLine(a + b);
 		    }
 		}
+ifを学ぶ
+	// if文による条件分岐
+		using System;
+		public class Program{
+		    public static void Main(){
+		        var random = new Random();
+		        var number = random.Next(1, 4);
+		        Console.WriteLine("あなたの順位は" + number + "位です"); 
+		        if (number == 1) {  //この条件式を知らなかったため、Javaと同じく{}の中に書いてしまった。動画を少し見て修正をするも(var number = 1;)と入れてしまい、エラー。当たりまえのこと。
+		             Console.WriteLine("おめでとう"); 
+		        }
+		    }
+		}
+		 ※C#はのif文は Javaと違い、{}の前に(条件式)を入れる。
 
