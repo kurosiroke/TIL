@@ -1619,4 +1619,13 @@ System.out.printlnの("勇者は敵に遭遇した");と("勇者は" + enemies[n
 		    }
 		}
 
-	
+	// 文字列で整数を表示する 
+		using System;
+		public class Program{
+		    public static void Main(){
+		        string a = "01234";  //文字列型で整数を表示するため、Stringを指定する。
+		        string b = "56789";
+		        Console.WriteLine(a + b);
+		    }
+		}
+
