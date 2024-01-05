@@ -1677,3 +1677,19 @@ ifを学ぶ
 		        }
 		    }
 		}
+1/5   演習課題「飲酒可能な年齢か判定する！」 age変数の中には、飲酒可能か判定する人の年齢が、18〜22才までのランダムな数値が代入されています。
+　　　　// if文による条件分岐　比較演算子
+	using System;
+	public class Program{
+	    public static void Main(){
+		var random = new Random();
+		var age = random.Next(0, 5) + 18;
+		Console.Write(age + "才は");
+		// ここにif文を追加する
+		if (age == 18) {
+		    Console.WriteLine("飲酒不可");
+		} else {
+		    Console.WriteLine("飲酒可能");
+		}
+	    }
+	}
