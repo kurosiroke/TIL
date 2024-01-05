@@ -1693,3 +1693,20 @@ ifを学ぶ
 		}
 	    }
 	}
+	演習課題「間違い修正：入賞圏内か判別する」
+		6位以内の場合は「●位入賞」と表示し、そうでなければ「●位入賞圏外」と表示する
+	// if文による条件分岐　比較演算子
+		using System;
+		public class Program{
+		    public static void Main(){
+		        var random = new Random();
+		        var place = random.Next(1, 13);
+		        Console.Write(place + "位"); 
+		        // ここにif文を追加する
+		        if (place < 6) { //６以下を表示
+		            Console.WriteLine("入賞");
+		        } else {
+		            Console.WriteLine("入賞圏外");
+		        }
+		    }
+		}
