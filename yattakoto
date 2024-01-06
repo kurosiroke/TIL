@@ -1725,6 +1725,7 @@ ifを学ぶ
 		    }
 		}
 演習課題「攻撃を回避させてみよう」　4以上は攻撃をかわしたとする。
+ ✖誤✖
 	using System;
 	public class Program{
 	    public static void Main(){
@@ -1738,3 +1739,18 @@ ifを学ぶ
 	        }
 	    }
 	}
+　〇正〇
+	using System;
+	public class Program{
+	    public static void Main(){
+	        var random = new Random();
+	        var dice = random.Next(1, 7);
+	        Console.WriteLine("サイコロは" + dice);
+	        if(dice >= 4) {
+	            Console.WriteLine("スライムの攻撃をかわした");
+	        } else {
+	            Console.WriteLine("スライムから10のダメージを受けた");
+	        }
+	    }
+	}
+
