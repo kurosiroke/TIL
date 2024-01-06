@@ -1710,3 +1710,17 @@ ifを学ぶ
 		        }
 		    }
 		}
+1/6  演習課題「大吉の確率を上げてみよう」
+	// おみくじを作る
+		using System;
+		public class Program{
+		    public static void Main(){
+		        var random = new Random();
+		        int omikuji = random.Next(1, 101);  // 1～101未満の値をランダムに選択されます。
+		        if (omikuji > 30) { //ifの(条件式)で30以上を設定しないといけないため、＞　の表記を使う。
+		             Console.WriteLine("omikujiの中身は" + omikuji + "なので大吉");
+		        } else {
+		             Console.WriteLine("omikujiの中身は" + omikuji + "なので大凶");
+		        }
+		    }
+		}
