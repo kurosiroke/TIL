@@ -1767,3 +1767,19 @@ ifを学ぶ
 1/8 git のエラーに関して対応できなかったため、強制プッシュを行った。
 	一人だけの作業だったので、これでよかったが、問題解決にはなっていないことを理解している。
 	要勉強と思った。
+
+  C#入門２ 学習　演習課題「西暦年から昭和年を計算する」
+     // 西暦年から昭和年を求める
+	using System;
+	public class Program{
+	    public static void Main(){
+	        var random = new Random();
+	        var seireki = random.Next(0, 63) + 1926;
+	        Console.Write("西暦" + seireki + "年は");
+	
+	        // 昭和年を計算
+	        var showa = 0;
+	        var nen = seireki - 1925;  //これを作成した。
+	        Console.WriteLine("昭和" + nen + "年です");
+	    }
+	}
