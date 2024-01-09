@@ -1823,3 +1823,16 @@ ifを学ぶ
 		    }
 		}
 	0からの表示でなく、１からの表示をさせたい場合は、Console.WriteLine(i + 1);とすることで、表示することが出来る。
+
+	// whileによるループ処理２ 2の倍数の表示
+		using System;
+		public class Program{
+		    public static void Main(){
+		        var i = 0;// カウンタ初期化
+		        while (i <= 9) {// ループ条件
+		        Console.WriteLine(i + 2);// データ出力
+		        i = i + 2;// カウントアップ
+		        }
+		    }
+		}
+	カウンタの初期化は0のままで、条件と、カウントアップなどに気を付けてやっていくといい。
