@@ -1836,3 +1836,17 @@ ifを学ぶ
 		    }
 		}
 	カウンタの初期化は0のままで、条件と、カウントアップなどに気を付けてやっていくといい。
+
+	// whileによるループ処理２　whileの数を出力することで、繰り返した回数を表示している。
+		using System;
+		public class Program{
+		    public static void Main(){
+		        var i = 0;  // カウンタ変数の初期化
+		        while(i <= 5) {
+		            Console.WriteLine("hello world " + i);  // 繰り返し処理
+		            i = i + 1;  // カウンタ変数の更新
+		        }
+		        Console.WriteLine("last " + i);
+		    }
+		}
+
