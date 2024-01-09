@@ -1811,4 +1811,15 @@ ifを学ぶ
 		        }
 		    }
 		}
+	// whileによるループ処理　整数を0~15まで表示させる。
+		using System;
+		public class Program{
+		    public static void Main(){
+		        var i = 0;
+		        while (i <= 14) {
+		            Console.WriteLine(i + 1);
+		            i = i + 1;
+		        }
+		    }
+		}
 
