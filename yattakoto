@@ -1783,3 +1783,18 @@ ifを学ぶ
 	        Console.WriteLine("昭和" + nen + "年です");
 	    }
 	}
+　　C#入門３ループ処理
+
+1/9 // whileによるループ処理
+	using System;
+	public class Program{
+	    public static void Main(){
+	        var i = 0;// カウンタ変数の初期化
+	        while (i <= 5) {  //(条件式)で、iにwhileの条件を設定している。
+	            Console.WriteLine("hello word" + i);// 繰り返し処理
+	            i = i + 1;// カウンタ変数の更新
+	        }
+	    }
+	}
+	条件式にある　<=　を使って、等しくなるまで繰り返しを実行させている。
+	　　　　
