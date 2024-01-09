@@ -1830,7 +1830,7 @@ ifを学ぶ
 		    public static void Main(){
 		        var i = 0;// カウンタ初期化
 		        while (i <= 9) {// ループ条件
-		        Console.WriteLine(i + 2);// データ出力
+		        Console.WriteLine(i);// データ出力
 		        i = i + 2;// カウントアップ
 		        }
 		    }
