@@ -1860,7 +1860,20 @@ ifを学ぶ
 		        var i = 10;
 		        while (i >= 1) {
 		            Console.WriteLine(i);
-		            i -= 1;
+		            i -= 1;  //　-=は、i = i - 1;で使う演算子の短縮。
 		        }
 		    }
 		}
+演習課題「数値を20から10までの奇数をカウントダウン表示する」(19,17,15,13,11)を表示する。
+	// whileによるループ処理３
+		using System;
+		public class Program{
+		    public static void Main(){
+		        var i = 19;
+		        while (i >= 10) {
+		            Console.WriteLine(i);
+		            i -= 2;
+		        }
+		    }
+		}
+	
