@@ -1851,4 +1851,16 @@ ifを学ぶ
 		}
 
 1/10 gitにpushできないというエラーに対応する。→　ディレクトリが移動されていない、間違えているなどで、すぐに解決した。
-	
+
+ 演習課題「数値を10から1までカウントダウン表示する」
+	// whileによるループ処理３
+		using System;
+		public class Program{
+		    public static void Main(){
+		        var i = 10;
+		        while (i >= 1) {
+		            Console.WriteLine(i);
+		            i -= 1;
+		        }
+		    }
+		}
