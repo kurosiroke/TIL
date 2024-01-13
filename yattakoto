@@ -1886,3 +1886,26 @@ ifを学ぶ
 	indexで画像表示の際にシンタックスエラーが出ていたが、スペルミスによるものであった。
 1/13 railsのエラーといわれたが、エラーではなく、勘違いであった。
 	自分も気を付けて確認を行おうと思った。
+
+C#  // forによるループ処理 hello worldを３回表示する。
+	using System;
+	public class Program{
+	    public static void Main(){
+		//for(カウンタ変数の初期化; 条件式; カウンタ変数の更新)
+		for(var i = 0; i < 3; i++) { 
+		     Console.WriteLine("hello world");
+		}
+	    }
+	}
+　　// forによるループ処理 hello worldを３回表示するだけでなく、last数字　と表示する。
+	using System;
+	public class Program{
+	    public static void Main(){
+		var i = 0;  //上記と違い、forの前で宣言することでfor処理の外で使うことが出来る。
+		//for(カウンタ変数の初期化; 条件式; カウンタ変数の更新)
+		for(i = 0; i < 3; i++) { 
+		     Console.WriteLine("hello world");
+		}
+		Console.WriteLine("lost" + 1) ;
+	    }
+	}
