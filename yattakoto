@@ -1928,4 +1928,13 @@ C#  // forによるループ処理 hello worldを３回表示する。
 	        }
 	    }
 	}
+演習課題「1月から12月まで表示する」// forによるループ処理
+using System;
+public class Program{
+    public static void Main(){
+        for(var i = 1; i <= 12; i++) {
+            Console.WriteLine(i + "月");
+        }
+    }
+}
 
