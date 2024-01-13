@@ -1909,3 +1909,23 @@ C#  // forによるループ処理 hello worldを３回表示する。
 		Console.WriteLine("lost" + i) ;
 	    }
 	}
+
+ 演習課題「「ハローpaizaラーニング」を10回表示する」// forによるループ処理
+	using System;
+	public class Program{
+	    public static void Main(){
+	        for (var i = 0; i < 10; i++) {
+	            Console.WriteLine("ハローpaizaラーニング");
+	        }
+	    }
+	}
+演習課題「数値を0から15まで表示する」// forによるループ処理
+	using System;
+	public class Program{
+	    public static void Main(){
+	        for(var i = 0; i < 16; i++) {
+	            Console.WriteLine(i);
+	        }
+	    }
+	}
+
