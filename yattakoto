@@ -1906,6 +1906,6 @@ C#  // forによるループ処理 hello worldを３回表示する。
 		for(i = 0; i < 3; i++) { 
 		     Console.WriteLine("hello world");
 		}
-		Console.WriteLine("lost" + 1) ;
+		Console.WriteLine("lost" + i) ;
 	    }
 	}
