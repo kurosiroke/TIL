@@ -1938,3 +1938,17 @@ public class Program{
     }
 }
 
+1/14 演習課題「HTMLの箇条書き表示」// HTMLによる箇条書き
+	using System;
+	public class Program{
+	    public static void Main(){
+	    Console.WriteLine("<ul>");
+	        for (var i = 1; i <= 100; i++){
+	        Console.WriteLine("<li>" + i + "</li>");
+	        }
+	    Console.WriteLine("</ul>");
+	    }
+	}
+
+ Console.WriteLine("<li>" + i + "</li>"); これの””を忘れ、iをつなげる+を入れていなかったりで、エラーを起こしてしまった。
+Console.WriteLine("<ul>");これまで一緒にforに入れてしまったため、エラーを起こしてしまった。
