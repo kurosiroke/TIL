@@ -1952,3 +1952,13 @@ public class Program{
 
  Console.WriteLine("<li>" + i + "</li>"); これの””を忘れ、iをつなげる+を入れていなかったりで、エラーを起こしてしまった。
 Console.WriteLine("<ul>");これまで一緒にforに入れてしまったため、エラーを起こしてしまった。
+
+1/15 演習課題「標準入力からテキストを取得する」// 標準入力
+	using System;
+	public class Program{
+	    public static void Main(){
+		var data = "";
+		data = Console.ReadLine();
+		Console.WriteLine(data);
+	    }
+	}
