@@ -1957,8 +1957,8 @@ Console.WriteLine("<ul>");これまで一緒にforに入れてしまったため
 	using System;
 	public class Program{
 	    public static void Main(){
-		var data = "";
-		data = Console.ReadLine();
-		Console.WriteLine(data);
+		var data = ""; //var data変数を使う。
+		data = Console.ReadLine(); //☜このReadLine();で入力を読み込んで
+		Console.WriteLine(data);  // ☜WriteLine();で出力する。
 	    }
 	}
