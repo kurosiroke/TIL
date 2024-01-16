@@ -1962,3 +1962,13 @@ Console.WriteLine("<ul>");これまで一緒にforに入れてしまったため
 		Console.WriteLine(data);  // ☜WriteLine();で出力する。
 	    }
 	}
+1/16 演習課題「標準入力からテキストを取得する」// 標準入力
+	using System;
+	public class Program{
+	    public static void Main(){
+	        var data = "";
+	        data = Console.ReadLine();
+	        Console.WriteLine(data);
+	    }
+	}
+	daga変数を作って、それにConsole.Read(リード)Line();をつかってdataに代入し、WriteLine(data);で出力している。
