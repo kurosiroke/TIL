@@ -1983,4 +1983,5 @@ Console.WriteLine("<ul>");これまで一緒にforに入れてしまったため
 	    }
 	}
 	整数を扱うため、data = int.Parse(Console.ReadLine());として、int.Parseを先に書き()の中にConsole.ReadLine()を入れる必要がある。
+	int Parse　＝ パース＝　解析する　という訳になる。
 
