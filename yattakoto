@@ -1987,3 +1987,15 @@ Console.WriteLine("<ul>");これまで一緒にforに入れてしまったため
 
 1/17 Wordの操作の確認
 1/19 タイピング
+     // 標準入力とループ処理 一回目の間違い。
+	using System;
+	public class Program{
+	    public static void Main(){
+		var data = 0;
+		    data = int.Parse(Console.ReadLine());
+		    for {
+			Console.WriteLine(スライムが現れた * data);
+		}
+	    }
+	}
+
