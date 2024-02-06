@@ -1,2 +1,32 @@
 2/6 switch文とはなんぞや？から、判明。
-    #私、やってないやん！！
+    そんな！　私、やってないやん！！
+    ということで、学習。
+    switchは、ifと違って、値で指定できる。
+＃04:switch　
+　演習課題「switch 文を使ってみよう」
+    右側のコードエリアには、標準入力から値を受け取るコードが用意されています。
+    switch 文を使用して、受け取った値に合わせて以下のような出力をおこなうコードを作成してください。
+    
+    - 1 のとき： ONE と出力
+    - 2 のとき： TWO と出力
+    - それ以外のとき： OVER と出力
+
+        import java.util.Scanner;
+        
+        public class Main {
+            public static void main(String... args) {
+                Scanner sc = new Scanner(System.in);
+                Integer i = sc.nextInt();
+                switch(i) {
+                    case 1:
+                        System.out.print("ONE");
+                        break;
+                    case 2:
+                        System.out.print("TWO");
+                        break;
+                    default:
+                        System.out.print("OVER");
+                        break;
+                }
+            }
+        }
