@@ -68,3 +68,5 @@
             default -> {
                 System.out.println("OVER");
         ｝
+    すっきりして見やすいコードになった。
+
