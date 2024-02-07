@@ -97,31 +97,3 @@
 完結に見やすく書けるが、};がいるのがわからず間違えた。
 あと、どの部分でString judgeを入れるのか、そもそも理解できていなかった。
 
-2/7
-演習課題「クラスからオブジェクトを作ろう」
-右のコードには、Greetingクラスに、メッセージを表示するsayHelloメソッドが定義されています。
-このクラスを実体化して、sayHelloメソッドを呼び出し、メッセージを表示してください。
-
-プログラムを実行して、正しく出力されれば演習課題クリアです！
-
- 期待する出力値
-hello paiza
-public class Main {
-    public static void main(String[] args) {
-        // この下でGreetingオブジェクトをつくり、メソッドを呼び出す
-        Greeting greeting1 = new Greeting();
-        greeting1.sayHello();
-    }
-}
-
-class Greeting {
-    public void sayHello() {
-        System.out.println("hello paiza");
-    }
-}
-# 見出し1
-## 見出し2
-### 見出し3
-#### 見出し4
-##### 見出し5
-###### 見出し6
