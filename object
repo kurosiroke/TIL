@@ -50,3 +50,27 @@ class Greeting {
         System.out.println("hello java");
     }
 }
+
+2/8 新・Java入門編23: アクセス制御について学習しよう1
+        カプセル化
+public class Main {
+    public static void main(String... args) {
+        SampleClass o1 = new SampleClass();
+        
+        o1.setFieldA("rio");
+        System.out.println(o1.getFieldA());
+    }
+}
+
+class SampleClass {
+    private String fieldA;　←ここでprivateを設定し、カプセル化している
+    
+    public void setFieldA(String s) {　←　setterで上記のfieldAをセットするため、setFieldAを持ってくる。
+        fieldA = s;
+    }
+    
+    public String getFieldA() {　　←　getterでfieldAを持ってくるため、getFieldAを設定している。
+        return fieldA;
+    }
+}
+
