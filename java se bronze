@@ -1,0 +1,13 @@
+public class Main {
+    public static void main(String[] args) {
+        String[] enemies = {"スライム","モンスター","ドラゴン"};
+        for (String enemy : enemies){ //拡張for文(変数型 変数名: 配列名)
+            //System.out.printnl("勇者は、" + enemy + "を攻撃した。");
+            attack(enemy);
+        }
+    }
+
+    public static void attack (String target) {
+        System.out.println("勇者は、" + target + "を攻撃した。");
+    }
+}
